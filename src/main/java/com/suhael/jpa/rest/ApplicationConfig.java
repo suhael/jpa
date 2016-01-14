@@ -15,6 +15,7 @@ public class ApplicationConfig extends Application {
 
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(com.suhael.jpa.rest.TagRest.class);
+        resources.add(com.suhael.jpa.rest.UserRest.class);
     }
 
 }

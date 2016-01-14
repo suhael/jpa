@@ -1,6 +1,6 @@
 package com.suhael.jpa.rest;
 
-import com.suhael.jpa.dao.jpa.TagDao;
+import com.suhael.jpa.dao.jpa.UserDao;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
@@ -12,15 +12,15 @@ import javax.ws.rs.core.Response;
 import java.io.IOException;
 
 @Stateless
-@Path("tag")
-public class TagRest {
+@Path("user")
+public class UserRest {
 
     @Inject
-    private TagDao tagDao;
+    private UserDao userDao;
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getRecipes() throws IOException {
-        return ResponseBuilder.returnJsonResponse(tagDao.getTags());
+    public Response getUsers() throws IOException {
+        return ResponseBuilder.returnJsonResponse(userDao.getUsers().size());
     }
 }
