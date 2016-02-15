@@ -1,0 +1,1 @@
+https://dzone.com/articles/jpa-tutorial-setting-jpa-java
