@@ -12,18 +12,18 @@ public class Issues implements Serializable {
 
     @Id
     @GeneratedValue
-    private int id;
+    private int issueId;
     private String subject;
     private boolean resolved;
 
     public Issues(){}
 
-    public int getId() {
-        return id;
+    public int getIssueId() {
+        return issueId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIssueId(int issueId) {
+        this.issueId = issueId;
     }
 
     public String getSubject() {

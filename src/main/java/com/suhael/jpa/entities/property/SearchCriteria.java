@@ -12,19 +12,19 @@ public class SearchCriteria implements Serializable {
 
     @Id
     @GeneratedValue
-    private int id;
+    private int criteriaId;
     private int minRooms;
     private int maxRooms;
     private int maxRent;
 
     public SearchCriteria(){}
 
-    public int getId() {
-        return id;
+    public int getCriteriaId() {
+        return criteriaId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCriteriaId(int criteriaId) {
+        this.criteriaId = criteriaId;
     }
 
     public int getMinRooms() {

@@ -12,7 +12,7 @@ public class Address implements Serializable{
 
     @Id
     @GeneratedValue
-    private int id;
+    private int addressId;
     private String line1;
     private String line2;
     private String line3;
@@ -22,12 +22,12 @@ public class Address implements Serializable{
 
     public Address(){}
 
-    public int getId() {
-        return id;
+    public int getAddressId() {
+        return addressId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setAddressId(int addressId) {
+        this.addressId = addressId;
     }
 
     public String getLine1() {

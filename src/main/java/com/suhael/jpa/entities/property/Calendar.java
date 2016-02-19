@@ -13,7 +13,7 @@ public class Calendar implements Serializable {
 
     @Id
     @GeneratedValue
-    private int id;
+    private int calendarId;
     private Date mondayStart;
     private Date mondayFinish;
     private Date tuesdayStart;
@@ -21,12 +21,12 @@ public class Calendar implements Serializable {
 
     public Calendar(){}
 
-    public int getId() {
-        return id;
+    public int getCalendarId() {
+        return calendarId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCalendarId(int calendarId) {
+        this.calendarId = calendarId;
     }
 
     public Date getMondayStart() {

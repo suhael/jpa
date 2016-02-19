@@ -15,19 +15,19 @@ public class SafetyCertificates implements Serializable {
 
     @Id
     @GeneratedValue
-    private int id;
+    private int cerificateId;
     private SafetyCertificateType safetyCertificateType;
     private Date expiryDate;
 
 
     public SafetyCertificates(){}
 
-    public int getId() {
-        return id;
+    public int getCerificateId() {
+        return cerificateId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCerificateId(int cerificateId) {
+        this.cerificateId = cerificateId;
     }
 
     public SafetyCertificateType getSafetyCertificateType() {

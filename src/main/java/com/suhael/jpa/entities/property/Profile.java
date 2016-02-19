@@ -11,7 +11,7 @@ public class Profile implements Serializable {
 
     @Id
     @GeneratedValue
-    private int id;
+    private int profileId;
     private String firstName;
     private String lastName;
     @Temporal(TemporalType.DATE)
@@ -20,12 +20,12 @@ public class Profile implements Serializable {
 
     public Profile(){}
 
-    public int getId() {
-        return id;
+    public int getProfileId() {
+        return profileId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setProfileId(int profileId) {
+        this.profileId = profileId;
     }
 
     public String getFirstName() {
